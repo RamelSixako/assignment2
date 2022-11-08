@@ -20,11 +20,11 @@ public class ReplaceElementProcessor {
 			}
 			System.out.print("Enter the postion you want to change");
 			int position = scanner.nextInt();
-			if (position < 0 || position - 1 > collectionSize) {
+			if (position <= 0 || position - 1 > collectionSize) {
 				System.out.println("There are no values that belong to this postion");
 				System.exit(0);
 			}
-			System.out.print("Enter the  the new value(name)");
+			System.out.print("Enter the new value(name)");
 			String newValue = scanner.next();
 			replaceValue(names, position, newValue);
 		} catch (Exception e) {
